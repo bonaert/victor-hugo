@@ -1,0 +1,22 @@
+.limited-width {
+	max-width: 800px; 
+	margin: 0 auto; 
+}
+
+.portfolio-description {
+	margin-bottom: 20px; 
+	margin-top: 20px;
+}
+
+
+.center, .image.center {
+	margin: 0 auto;
+}
+
+.small-width {
+	max-width: 500px;
+}
+
+p {
+	margin-bottom: 1em;
+}

@@ -10,7 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		
 		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/mainLocal.css" />
+
 		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
 	</head>
@@ -25,7 +28,7 @@
 						<div id="logo">
 							<span class="image avatar48"><img src="img/avatar.jpg" alt="" /></span>
 							<h1 id="title">{{ .Site.Params.name }}</h1>
-							<p>{{ .Site.Params.description }}</p>
+							<h6>{{ .Site.Params.description }}</h6>
 						</div>
 
 					<!-- Nav -->
@@ -46,7 +49,7 @@
 							<ul>
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">À propos</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -93,8 +96,11 @@
 						<header>
 							<h2>Portfolio</h2>
 
-							<p style="max-width: 750px; margin: 0 auto; margin-bottom: 20px; margin-top: 20px" >Voici certains projets que j'ai realisé pour des clients. Cliquez pour 
-							voir plus d'images et comprendre le projet.</p>
+							<p class="limited-width portfolio-description">
+							Voici certains projets que j'ai realisé. Cliquez pour 
+							voir le projet en détail, avec une description du projet, les buts du client et la solution créée
+							pour atteindre ces buts.
+							</p>
 						</header>
 
 
@@ -148,15 +154,17 @@
 								<h2>À propos</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="img/about.jpg" alt="" /></a>
+							<div class="row">
+								<div class="6u 12u$(mobile)">
+									<p>Freelancer</p>
+									<p>Étudiant en sciences informatiques.</p>
+								</div>	
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
-
+								<div class="6u 12u$(mobile)">
+									<img src="img/about.png" alt="" class="image small-width center"/>
+								</div>
+								
+							</div>
 						</div>
 					</section>
 
