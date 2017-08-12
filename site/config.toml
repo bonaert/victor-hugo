@@ -6,7 +6,7 @@ theme = "prologue"
 [params]
   name = "Gregory Bonaert"
   description = "Développeur"
-  copyright = "Untitled."
+  copyright = "Gregory Bonaert"
 
 
 [[params.social]]
