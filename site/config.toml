@@ -1,3 +1,48 @@
-baseurl = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Prologue"
+baseurl = "/"
+theme = "prologue"
+
+[params]
+  name = "Gregory Bonaert"
+  description = "Développeur"
+  copyright = "Untitled."
+
+
+[[params.social]]
+  medium = "github"
+  icon = "github"
+  link = "https://github.com/harokb"
+
+
+[[params.social]]
+  medium = "email"
+  icon = "envelope"
+  link = "mailto:gregory@bonaert.eu"
+
+# Portfolio column one
+
+[[params.portfolio1]]
+  title = "Ipsum Feugiat"
+  alt = ""
+  source = "img/pic02.jpg"
+  url = "#"
+
+
+# Portfolio column two
+
+[[params.portfolio2]]
+  title = "Dolor Penatibus"
+  alt = ""
+  source = "img/pic06.jpg"
+  url = "#"
+
+
+# Portfolio column 3
+
+#[[params.portfolio3]]
+#  title = "Magna Nullam"
+#  alt = ""
+#  source = "img/pic04.jpg"
+#  url = "#"
+
