@@ -32,8 +32,8 @@ theme = "prologue-theme"
 # Portfolio column two
 
 [[params.portfolio2]]
-  title = "DifDiag - Medical"
-  alt = "DifDiag - a medical website"
+  title = "Projet Bordet - Medical"
+  alt = "Projet Bordet - a medical website"
   source = "/img/difdiag.png"
   url = "#"
 
