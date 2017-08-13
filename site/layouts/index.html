@@ -5,127 +5,144 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>{{ .Title }}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
-		
-		<link rel="stylesheet" href="/css/main.css" />
-		<link rel="stylesheet" href="/css/mainLocal.css" />
+<head>
+    <title>{{ .Title }}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="/js/ie/html5shiv.js"></script><![endif]-->
 
-		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/mainLocal.css"/>
 
-		<!-- Header -->
-			<div id="header">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/css/ie9.css"/><![endif]-->
+</head>
+<body>
 
-				<div class="top">
+<!-- Header -->
+<div id="header">
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="img/avatar.jpg" alt="" /></span>
-							<h1 id="title">{{ .Site.Params.name }}</h1>
-							<h6>{{ .Site.Params.description }}</h6>
-						</div>
+    <div class="top">
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img src="/img/avatar.jpg" alt=""/></span>
+            <h1 id="title">{{ .Site.Params.name }}</h1>
+            <h6>{{ i18n "short-description" }}</h6>
+        </div>
 
-								Prologue's nav expects links in one of two formats:
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
 
-								1. Hash link (scrolls to a different section within the page)
+                Prologue's nav expects links in one of two formats:
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+                1. Hash link (scrolls to a different section within the page)
 
-								2. Standard link (sends the user to another page/site)
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+                2. Standard link (sends the user to another page/site)
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">À propos</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
-				</div>
+            -->
+            <ul>
+                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">
+                    {{ i18n "intro" }}
+                </span></a>
+                </li>
+                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">
+                    {{ i18n "portfolio"}}</span></a>
+                </li>
+                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span
+                        class="icon fa-user">{{ i18n "about"}}</span></a></li>
+                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">
+                    {{ i18n "contact" }}
+                </span></a>
+                </li>
+            </ul>
+        </nav>
 
-				<div class="bottom">
+    </div>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-              {{ range .Site.Params.social }}
-              <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-              {{ end }}
-						</ul>
+    <div class="bottom">
 
-				</div>
+        <!-- Social Icons -->
+        <ul class="icons">
+            {{ range .Site.Params.social }}
+            <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+            {{ end }}
+        </ul>
 
-			</div>
+    </div>
 
-		<!-- Main -->
-			<div id="main">
+</div>
 
-				<!-- Intro -->
-				<section id="top" class="one dark cover">
-					<div class="container">
+<!-- Main -->
+<div id="main">
 
-						<header>
-							<h2 class="alt"><strong>Grégory Bonaert</strong></h2>
-							<p>Dévéloppeur. Prêt à vous aider pour tous vos projets.</p>
-						</header>
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+        <div class="container">
+            <div style="position:absolute; right: 20px; top: 10px;">
+                {{ if eq .Lang "en" }}
+                    <a href="/fr/">Français</a>
+                {{ else }}
+                    <a href="/">English</a>
+                {{ end }}
 
-						<footer>
-							<a href="#portfolio" class="button scrolly">Voir projets</a>
-							<a href="#contact" class="button scrolly">Contacter</a>
-						</footer>
+            </div>
 
-					</div>
-				</section>
+            <header>
+                <h2 class="alt"><strong>Grégory Bonaert</strong></h2>
+                <p>{{ i18n "header-description" }}</p>
+            </header>
 
-				<!-- Portfolio -->
-				<section id="portfolio" class="two">
-					<div class="container">
+            <footer>
+                <a href="#portfolio" class="button scrolly">{{ i18n "see-projects" }}</a>
+                <a href="#contact" class="button scrolly">{{ i18n "contact-me" }}</a>
+            </footer>
 
-						<header>
-							<h2>Portfolio</h2>
+        </div>
+    </section>
 
-							<p class="limited-width portfolio-description">
-							Voici certains projets que j'ai realisé. Cliquez pour 
-							voir le projet en détail, avec une description du projet, les buts du client et la solution créée
-							pour atteindre ces buts.
-							</p>
-						</header>
+    <!-- Portfolio -->
+    <section id="portfolio" class="two">
+        <div class="container">
+
+            <header>
+                <h2>{{ i18n "portfolio" }}</h2>
+
+                <p class="limited-width portfolio-description">
+                    {{ i18n "portfolio-explanation" }}
+                </p>
+            </header>
 
 
-
-              <div class="row">
+            <div class="row">
                 <div class="6u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio1 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
+                    {{ range .Site.Params.portfolio1 }}
+                    <article class="item">
+                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/></a>
+                        <header>
+                            <h3 class="bold">{{ .title }}</h3>
+                        </header>
+                    </article>
+                    {{ end }}
                 </div>
 
                 <div class="6u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio2 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
+                    {{ range .Site.Params.portfolio2 }}
+                    <article class="item">
+                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/></a>
+                        <header>
+                            <h3 class="bold">{{ .title }}</h3>
+                        </header>
+                    </article>
+                    {{ end }}
                 </div>
 
                 <!--
@@ -140,80 +157,81 @@
                   {{ end }}
                 </div>
                 -->
-              </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Me -->
+    <section id="about" class="three">
+        <div class="container">
 
-						</div>
-					</section>
+            <header>
+                <h2>{{ i18n "about" }}</h2>
+            </header>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+            <div class="row">
+                <div class="6u 12u$(mobile)">
+                    {{ i18n "about-description" }}
 
-							<header>
-								<h2>À propos</h2>
-							</header>
+                </div>
 
-							<div class="row">
-								<div class="6u 12u$(mobile)">
-									<p>Freelancer</p>
-									<p>Étudiant en sciences informatiques.</p>
-								</div>	
+                <div class="6u 12u$(mobile)">
+                    <img src="/img/about.png" alt="" class="image fit small-width center rounded-corners"/>
+                    <!--<img src="/img/ipad.jpg" alt="" class="image fit small-width center"/>-->
+                </div>
 
-								<div class="6u 12u$(mobile)">
-									<img src="img/about.png" alt="" class="image small-width center"/>
-								</div>
-								
-							</div>
-						</div>
-					</section>
+            </div>
+        </div>
+    </section>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+    <!-- Contact -->
+    <section id="contact" class="four">
+        <div class="container">
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+            <header>
+                <h2>{{ i18n "contact" }}</h2>
+            </header>
 
-							<p>N'hésitez pas à poster vos questions.</p>
+            <p>{{ i18n "contact-explanation" }}</p>
 
-							<form method="post" action="thank-you" netlify>
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Nom" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="12u$">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="12u$">
-										<input type="submit" value="Envoyer votre message" />
-									</div>
-								</div>
-							</form>
+            <form method="post" action="thank-you" netlify>
+                <div class="row">
+                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="{{ i18n "name" }}"/></div>
+                    <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email"/></div>
+                    <div class="12u$">
+                        <textarea name="message" placeholder="{{ i18n "message" }}"></textarea>
+                    </div>
+                    <div class="12u$">
+                        <input type="submit" value="{{ i18n "send-message" }}"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 
-						</div>
-					</section>
+</div>
 
-			</div>
+<!-- Footer -->
+<div id="footer">
 
-		<!-- Footer -->
-			<div id="footer">
+    <!-- Copyright -->
+    <ul class="copyright">
+        <li>&copy; {{ .Site.Params.copyright }}</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li><a href="https://gohugo.io/">Hugo</a></li>
+    </ul>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; {{ .Site.Params.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li><li>Powered by <a href="https://gohugo.io/">Hugo</a></li>
-					</ul>
+</div>
 
-			</div>
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/jquery.scrollzer.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="/js/ie/respond.min.js"></script><![endif]-->
+<script src="/js/main.js"></script>
 
-		<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
-			<script src="/js/jquery.scrolly.min.js"></script>
-			<script src="/js/jquery.scrollzer.min.js"></script>
-			<script src="/js/skel.min.js"></script>
-			<script src="/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/js/main.js"></script>
-
-	</body>
+</body>
 </html>

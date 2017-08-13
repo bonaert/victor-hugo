@@ -1,11 +1,11 @@
-languageCode = "en-us"
-title = "Prologue"
+#languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Gregory Bonaert"
 baseurl = "/"
 theme = "prologue-theme"
 
 [params]
   name = "Gregory Bonaert"
-  description = "Développeur"
   copyright = "Gregory Bonaert"
 
 
@@ -23,18 +23,18 @@ theme = "prologue-theme"
 # Portfolio column one
 
 [[params.portfolio1]]
-  title = "Ipsum Feugiat"
-  alt = ""
-  source = "img/pic02.jpg"
+  title = "LusoLeaves - Business"
+  alt = "Lusoleaves - a business website."
+  source = "/img/lusoleaves.png"
   url = "#"
 
 
 # Portfolio column two
 
 [[params.portfolio2]]
-  title = "Dolor Penatibus"
-  alt = ""
-  source = "img/pic06.jpg"
+  title = "DifDiag - Medical"
+  alt = "DifDiag - a medical website"
+  source = "/img/difdiag.png"
   url = "#"
 
 
@@ -43,6 +43,9 @@ theme = "prologue-theme"
 #[[params.portfolio3]]
 #  title = "Magna Nullam"
 #  alt = ""
-#  source = "img/pic04.jpg"
+#  source = "/img/pic04.jpg"
 #  url = "#"
 
+[Languages]
+[Languages.en]
+[Languages.fr]

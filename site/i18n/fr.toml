@@ -1,0 +1,46 @@
+[short-description]
+other = "Développeur"
+
+[intro]
+other = "Intro"
+
+[portfolio]
+other = "Portfolio"
+
+[about]
+other = "À propos"
+
+[contact]
+other = "Contact"
+
+[header-description]
+other = "Dévéloppeur. Prêt à vous aider pour tous vos projets."
+
+[see-projects]
+other = "Voir projets"
+
+[contact-me]
+other = "Contacter"
+
+[portfolio-explanation]
+other = "Voici certains projets que j'ai realisé. Cliquez pour voir le projet en détail, avec une description du projet, les buts du client et la solution créée pour atteindre ces buts."
+
+[about-description]
+other = "Freelancer. Étudiant en sciences informatiques."
+
+[contact-explanation]
+other = "Envoyez un message si vous avez des question ou souhaitez parler d'un projet."
+
+[name]
+other = "Nom"
+
+[message]
+other = "Message"
+
+[send-message]
+other = "Envoyer votre message"
+
+
+
+
+
