@@ -1,7 +1,7 @@
 languageCode = "en-us"
 title = "Prologue"
 baseurl = "/"
-theme = "prologue"
+theme = "prologue-theme"
 
 [params]
   name = "Gregory Bonaert"
