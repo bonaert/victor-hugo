@@ -45,3 +45,8 @@ article.item > header {
         margin-left: 10px;
     }
 }
+
+
+#logo {
+    margin: 1.75em 1.25em 1.5em 1.25em;
+}
