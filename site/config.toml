@@ -1,5 +1,5 @@
 #languageCode = "en-us"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "fr"
 title = "Gregory Bonaert"
 baseurl = "/"
 theme = "prologue-theme"
@@ -26,7 +26,7 @@ theme = "prologue-theme"
   title = "LusoLeaves - Business"
   alt = "Lusoleaves - a business website."
   source = "/img/lusoleaves.png"
-  url = "#"
+  url = "portfolio/lusoleaves"
 
 
 # Portfolio column two
@@ -35,7 +35,7 @@ theme = "prologue-theme"
   title = "Projet Bordet - Medical"
   alt = "Projet Bordet - a medical website"
   source = "/img/difdiag.png"
-  url = "#"
+  url = "portfolio/bordet"
 
 
 # Portfolio column 3

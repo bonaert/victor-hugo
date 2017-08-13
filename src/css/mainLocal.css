@@ -1,32 +1,31 @@
 .limited-width {
-	max-width: 800px; 
-	margin: 0 auto; 
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .portfolio-description {
-	margin-bottom: 20px; 
-	margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-
 .center, .image.center {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 .small-width {
-	max-width: 500px;
+    max-width: 500px;
 }
 
 p {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .bold {
     font-weight: bold;
 }
 
-article.item > header {
-    border-top: 1px solid #eff4f4;
+article.item > a > header {
+    border-top: 1px solid #ccc;
     background-color: #fbfbfb;
 }
 
@@ -52,4 +51,32 @@ article.item > header {
 
 #logo {
     margin: 1.75em 1.25em 1.5em 1.25em;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: -1px;
+}
+
+ol.bullets, ul.bullets {
+    list-style: circle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#portfolio.portfolio-content {
+    margin-left: 10px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.bordered {
+    border: 1px solid #ccc;
 }

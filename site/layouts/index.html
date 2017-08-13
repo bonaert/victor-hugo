@@ -9,7 +9,7 @@
     <title>{{ .Title }}</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico'/>
     <!--[if lte IE 8]>
     <script src="/js/ie/html5shiv.js"></script><![endif]-->
 
@@ -91,9 +91,9 @@
         <div class="container">
             <div style="position:absolute; right: 20px; top: 10px;">
                 {{ if eq .Lang "en" }}
-                    <a href="/fr/">Français</a>
+                <a href="/fr/">Français</a>
                 {{ else }}
-                    <a href="/">English</a>
+                <a href="/">English</a>
                 {{ end }}
 
             </div>
@@ -127,22 +127,25 @@
             <div class="row">
                 <div class="6u 12u$(mobile)">
                     {{ range .Site.Params.portfolio1 }}
-                    <article class="item">
-                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/></a>
-                        <header>
-                            <h3 class="bold">{{ .title }}</h3>
-                        </header>
+                    <article class="item bordered">
+                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/>
+                            <header>
+                                <h3 class="bold">{{ .title }}</h3>
+                            </header>
+                        </a>
                     </article>
                     {{ end }}
                 </div>
 
+
                 <div class="6u 12u$(mobile)">
                     {{ range .Site.Params.portfolio2 }}
-                    <article class="item">
-                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/></a>
-                        <header>
-                            <h3 class="bold">{{ .title }}</h3>
-                        </header>
+                    <article class="item bordered">
+                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/>
+                            <header>
+                                <h3 class="bold">{{ .title }}</h3>
+                            </header>
+                        </a>
                     </article>
                     {{ end }}
                 </div>
@@ -198,13 +201,13 @@
 
             <form method="post" name="contact" action="thank-you" netlify>
                 <div class="row">
-                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="{{ i18n "name" }}"/></div>
+                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="{{ i18n " name" }}"/></div>
                     <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email"/></div>
                     <div class="12u$">
-                        <textarea name="message" placeholder="{{ i18n "message" }}"></textarea>
+                        <textarea name="message" placeholder="{{ i18n " message" }}"></textarea>
                     </div>
                     <div class="12u$">
-                        <input type="submit" value="{{ i18n "send-message" }}"/>
+                        <input type="submit" value="{{ i18n " send-message" }}"/>
                     </div>
                 </div>
             </form>
