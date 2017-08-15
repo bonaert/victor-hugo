@@ -56,10 +56,10 @@ other = "Engager un développeur front-end ou back-end"
 other = "Ajouter une fonctionalité à votre projet existant"
 
 [help-you-intro]
-other = "Alors je peux vous aider!"
+other = "Je peux travailler pour vous."
 
 [help-you-get-in-touch]
-other = "Envoyez votre message en un instant!"
+other = "Envoyez votre message!"
 
 # Portfolio
 
@@ -70,7 +70,7 @@ other = "Clients"
 other = "Voici certains projets realisés pour des clients. Cliquez pour voir le projet en détail, comprendre les buts du client et la solution créée pour atteindre ces buts."
 
 [portfolio-see-github-on]
-other = "Pour les codeurs, voici le lien vers mes autres projets sur Github"
+other = "Pour les codeurs, voici le lien vers mes autres projets sur "
 
 
 # About
@@ -86,7 +86,7 @@ other = "Je suis un freelancer principalment dans le développement Web (front-e
 # Contact
 
 [contact-explanation]
-other = "Si vous souhaitez parler d'un projet ou poser une question, n'hésitez pas à envoyer un message!"
+other = "Si vous souhaitez parler d'un projet, poser une question ou obtenir un devis, n'hésitez pas à envoyer un message!"
 
 [contact-send-email]
 other = "Envoyez un email"
