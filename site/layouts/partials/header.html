@@ -51,11 +51,11 @@
              <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
       -->
-        <!-- TODO: need to make this part work on all pages -->
-        <!-- Either add an if-else to conditionnaly include to correct partial -->
-        <!-- or (better) make one partial that contains the logic. I'll do this when I have Internet again -->
-            {{ partial "linksIndex" }}
-            <!--{{ partial "linksOther" }}-->
+            {{ if .IsHome }}
+                {{ partial "linksIndex" }}
+            {{ else }}
+                {{ partial "linksOther" }}
+            {{ end }}
     </nav>
 
   </div>
