@@ -22,14 +22,75 @@ other = "See projects"
 [contact-me]
 other = "Contact me"
 
-[portfolio-explanation]
-other = "Here are some of my previous projects. Click to learn more about the project, the client's goals and the solution that was created to meet those goals."
+# Help
 
-[about-description]
-other = "Freelancer. Computer science student."
+[help-you]
+other = "What can I do for you?"
+
+[help-you-short]
+other = "What can I do for you?"
+
+[help-you-explanation]
+other = "Do you want to do any of the following:"
+
+[help-you-create-a-website]
+other = "Create a website for your business or for yourself"
+
+[help-you-create-an-app]
+other = "Create an app"
+
+[help-you-help-with-wordpress]
+other = "Create or improve your Wordpress site"
+
+[help-you-code-for-you]
+other = "Get development help for your software project"
+
+[help-you-integrate-with-api]
+other = "Integrate with an external service or API (Stripe, HubSpot, Google Analytics, ...)"
+
+[help-you-frontend-backed-dev]
+other = "Hire a front-end or back-end software developer"
+
+[help-you-add-feature]
+other = "Add a feature to your current project"
+
+[help-you-intro]
+other = "Then I can help you!"
+
+[help-you-get-in-touch]
+other = "Let's get in touch!"
+
+
+
+# Portfolio
+
+[trustful-clients]
+other = "Previous clients"
+
+[portfolio-explanation]
+other = "Here are some of my previous projects for clients. Click to learn more about the project, the client's goals and the solution that was created to meet those goals."
+
+
+# About
+
+[about-description-1]
+other = "I'm Grégory Bonaert, a computer science student at Université Libre de Bruxelles, in Belgium."
+
+
+[about-description-2]
+other = "I mainly do freelance work in Web development (front-end and back-end), but can also help you for all kinds of software development."
+
+
+# Contact
+
+[contact-send-email]
+other = "Send me an email"
+
+[contact-send-message-form]
+other = "Send a message through the form"
 
 [contact-explanation]
-other = "Feel free to contact me if you want ask a question or chat about a project."
+other = "If you want to chat about a project or have a question, feel free to contact me."
 
 [name]
 other = "Name"

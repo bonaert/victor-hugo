@@ -22,14 +22,74 @@ other = "Voir projets"
 [contact-me]
 other = "Contacter"
 
-[portfolio-explanation]
-other = "Voici certains projets que j'ai realisé. Cliquez pour voir le projet en détail, avec une description du projet, les buts du client et la solution créée pour atteindre ces buts."
 
-[about-description]
-other = "Freelancer. Étudiant en sciences informatiques."
+# Help
+
+[help-you]
+other = "Que puis-je faire pour vous?"
+
+[help-you-short]
+other = "Vous aider"
+
+[help-you-explanation]
+other = "Est-ce que vous voulez: "
+
+[help-you-create-a-website]
+other = "Créer un site web pour votre business ou pour vous"
+
+[help-you-create-an-app]
+other = "Créer une application"
+
+[help-you-help-with-wordpress]
+other = "Créer ou améliorer votre site Wordpress"
+
+[help-you-code-for-you]
+other = "Obtenir de l'aide pour développer votre projet de software"
+
+[help-you-integrate-with-api]
+other = "Intégrer votre projet avec un service externe ou un API (Stripe, HubSpot, Google Analytics, ...)"
+
+[help-you-frontend-backed-dev]
+other = "Engager un développeur front-end ou back-end"
+
+[help-you-add-feature]
+other = "Ajouter une fonctionalité à votre projet existant"
+
+[help-you-intro]
+other = "Alors je peux vous aider!"
+
+[help-you-get-in-touch]
+other = "Envoyez votre message en un instant!"
+
+# Portfolio
+
+[trustful-clients]
+other = "Clients"
+
+[portfolio-explanation]
+other = "Voici certains projets realisés pour des clients. Cliquez pour voir le projet en détail, comprendre les buts du client et la solution créée pour atteindre ces buts."
+
+
+# About
+
+[about-description-1]
+other = "Je suis Grégory Bonaert, un étudiant en sciences informatiques à l'Université Libre de Bruxelles, en Belgique."
+
+# TODO: check principalment in dictionary
+[about-description-2]
+other = "Je suis un freelancer principalment dans le développement Web (front-end et back-end), mais je peux vous aider pour tout type de développement."
+
+
+# Contact
 
 [contact-explanation]
-other = "Envoyez un message si vous avez des question ou souhaitez parler d'un projet."
+other = "Si vous souhaitez parler d'un projet ou poser une question, n'hésitez pas à envoyer un message!"
+
+[contact-send-email]
+other = "Envoyez un email"
+
+[contact-send-message-form]
+other = "Envoyez un message via le formulaire"
 
 [name]
 other = "Nom"

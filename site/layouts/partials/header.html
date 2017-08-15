@@ -1,7 +1,77 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <title>Hugo with Gulp and Webpack</title>
-    <link rel="stylesheet" href="/css/main.css"/>
-  </head>
-  <body>
+<head>
+  <title>{{ .Title }}</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico'/>
+  <!--[if lte IE 8]>
+  <script src="/js/ie/html5shiv.js"></script><![endif]-->
+
+
+  <link rel="stylesheet" href="/css/main.css"/>
+  <link rel="stylesheet" href="/css/mainLocal.css"/>
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/ie8.css"/><![endif]-->
+  <!--[if lte IE 9]>
+  <link rel="stylesheet" href="/css/ie9.css"/><![endif]-->
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+
+  <div class="top">
+
+    <!-- Logo -->
+    <div id="logo">
+      <span class="image avatar48"><img class="" src="/img/favicon.svg" alt=""/></span>
+      <h1 id="title">{{ .Site.Params.name }}</h1>
+      <h6>{{ i18n "short-description" }}</h6>
+    </div>
+
+    <!-- Nav -->
+    <nav id="nav">
+      <!--
+
+          Prologue's nav expects links in one of two formats:
+
+          1. Hash link (scrolls to a different section within the page)
+
+             <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+          2. Standard link (sends the user to another page/site)
+
+             <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+      -->
+        <!-- TODO: need to make this part work on all pages -->
+        <!-- Either add an if-else to conditionnaly include to correct partial -->
+        <!-- or (better) make one partial that contains the logic. I'll do this when I have Internet again -->
+            {{ partial "linksIndex" }}
+            <!--{{ partial "linksOther" }}-->
+    </nav>
+
+  </div>
+
+  <div class="bottom">
+
+    <!-- Social Icons -->
+    <ul class="icons">
+      {{ range .Site.Params.social }}
+      <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+      {{ end }}
+    </ul>
+
+  </div>
+
+</div>
+
+<!-- Main -->
+<div id="main">

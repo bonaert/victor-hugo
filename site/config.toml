@@ -1,5 +1,5 @@
 #languageCode = "en-us"
-DefaultContentLanguage = "fr"
+DefaultContentLanguage = "en"
 title = "Gregory Bonaert"
 baseurl = "/"
 theme = "prologue-theme"
@@ -7,6 +7,7 @@ theme = "prologue-theme"
 [params]
   name = "Gregory Bonaert"
   copyright = "Gregory Bonaert"
+  email = "gregory@bonaert.eu"
 
 
 [[params.social]]

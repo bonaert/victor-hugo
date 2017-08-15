@@ -66,9 +66,17 @@ ol.bullets, ul.bullets {
     text-align: center;
 }
 
+.left-centered {
+    text-align: left;
+}
+
 p {
     font-size: 1.2em;
     font-weight: 400;
+}
+
+.smaller-type, .smaller-type > p {
+    font-size: 1.0em;
 }
 
 #portfolio.portfolio-content {
@@ -79,4 +87,20 @@ p {
 
 .bordered {
     border: 1px solid #ccc;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #4caf50;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], button, .button {
+    background-color: #4caf50;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .button:hover {
+    background-color: #66bb6a;
 }

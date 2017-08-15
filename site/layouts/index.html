@@ -1,242 +1,159 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-<head>
-    <title>{{ .Title }}</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico'/>
-    <!--[if lte IE 8]>
-    <script src="/js/ie/html5shiv.js"></script><![endif]-->
+{{ partial "header" . }}
 
-
-    <link rel="stylesheet" href="/css/main.css"/>
-    <link rel="stylesheet" href="/css/mainLocal.css"/>
-
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="/css/ie8.css"/><![endif]-->
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="/css/ie9.css"/><![endif]-->
-</head>
-<body>
-
-<!-- Header -->
-<div id="header">
-
-    <div class="top">
-
-        <!-- Logo -->
-        <div id="logo">
-            <span class="image avatar48"><img class="" src="/img/favicon.svg" alt=""/></span>
-            <h1 id="title">{{ .Site.Params.name }}</h1>
-            <h6>{{ i18n "short-description" }}</h6>
-        </div>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <!--
-
-                Prologue's nav expects links in one of two formats:
-
-                1. Hash link (scrolls to a different section within the page)
-
-                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-                2. Standard link (sends the user to another page/site)
-
-                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-            -->
-            <ul>
-                <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">
-                    {{ i18n "intro" }}
-                </span></a>
-                </li>
-                <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">
-                    {{ i18n "portfolio"}}</span></a>
-                </li>
-                <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span
-                        class="icon fa-user">{{ i18n "about"}}</span></a></li>
-                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">
-                    {{ i18n "contact" }}
-                </span></a>
-                </li>
-            </ul>
-        </nav>
-
-    </div>
-
-    <div class="bottom">
-
-        <!-- Social Icons -->
-        <ul class="icons">
-            {{ range .Site.Params.social }}
-            <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+<!-- Intro -->
+<section id="top" class="one dark cover">
+    <div class="container">
+        <div style="position:absolute; right: 20px; top: 10px;">
+            {{ if eq .Lang "en" }}
+            <a href="/fr/">Français</a>
+            {{ else }}
+            <a href="/">English</a>
             {{ end }}
-        </ul>
+
+        </div>
+
+        <header>
+            <h2 class="alt"><strong>Grégory Bonaert</strong></h2>
+            <p>{{ i18n "header-description" }}</p>
+        </header>
+
+        <footer>
+            <a href="#portfolio" class="button scrolly">{{ i18n "see-projects" }}</a>
+            <a href="#contact" class="button scrolly">{{ i18n "contact-me" }}</a>
+        </footer>
 
     </div>
+</section>
 
-</div>
+<!-- Portfolio -->
+<section class="two">
+    <div class="container">
 
-<!-- Main -->
-<div id="main">
+        <header id="help-you">
+            <h2>{{ i18n "help-you" }}</h2>
 
-    <!-- Intro -->
-    <section id="top" class="one dark cover">
-        <div class="container">
-            <div style="position:absolute; right: 20px; top: 10px;">
-                {{ if eq .Lang "en" }}
-                <a href="/fr/">Français</a>
-                {{ else }}
-                <a href="/">English</a>
-                {{ end }}
-
-            </div>
-
-            <header>
-                <h2 class="alt"><strong>Grégory Bonaert</strong></h2>
-                <p>{{ i18n "header-description" }}</p>
-            </header>
-
-            <footer>
-                <a href="#portfolio" class="button scrolly">{{ i18n "see-projects" }}</a>
-                <a href="#contact" class="button scrolly">{{ i18n "contact-me" }}</a>
-            </footer>
-
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="two">
-        <div class="container">
-
-            <header>
-                <h2>{{ i18n "portfolio" }}</h2>
-
-                <p class="limited-width portfolio-description">
-                    {{ i18n "portfolio-explanation" }}
+            <div class="left-centered limited-width ">
+                <p class="portfolio-description">
+                    {{ i18n "help-you-explanation" }}
                 </p>
-            </header>
 
+                <ul class="bullets">
+                    <li>{{ i18n "help-you-create-a-website"}}</li>
+                    <li>{{ i18n "help-you-help-with-wordpress"}}</li>
+                    <li>{{ i18n "help-you-code-for-you"}}</li>
+                    <li>{{ i18n "help-you-integrate-with-api"}}</li>
+                    <li>{{ i18n "help-you-frontend-backed-dev"}}</li>
+                    <li>{{ i18n "help-you-add-feature"}}</li>
+                </ul>
 
-            <div class="row">
-                <div class="6u 12u$(mobile)">
-                    {{ range .Site.Params.portfolio1 }}
-                    <article class="item bordered">
-                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/>
-                            <header>
-                                <h3 class="bold">{{ .title }}</h3>
-                            </header>
-                        </a>
-                    </article>
-                    {{ end }}
-                </div>
-
-
-                <div class="6u 12u$(mobile)">
-                    {{ range .Site.Params.portfolio2 }}
-                    <article class="item bordered">
-                        <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/>
-                            <header>
-                                <h3 class="bold">{{ .title }}</h3>
-                            </header>
-                        </a>
-                    </article>
-                    {{ end }}
-                </div>
-
-                <!--
-                <div class="4u 12u$(mobile)">
-                  {{ range .Site.Params.portfolio3 }} 
-                  <article class="item">
-                    <a href="{{ .url }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                    <header>
-                      <h3>{{ .title }}</h3>
-                    </header>
-                  </article>
-                  {{ end }}
-                </div>
-                -->
+                <p>{{ i18n "help-you-intro" }} <a href="#contact" class="scrolly">{{ i18n "help-you-get-in-touch" }}</a></p>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- About Me -->
-    <section id="about" class="three">
-        <div class="container">
+        <header id="portfolio">
+            <h2>{{ i18n "trustful-clients" }}</h2>
 
-            <header>
-                <h2>{{ i18n "about" }}</h2>
-            </header>
+            <p class="limited-width portfolio-description">
+                {{ i18n "portfolio-explanation" }}
+            </p>
+        </header>
 
-            <div class="row">
-                <div class="6u 12u$(mobile)">
-                    {{ i18n "about-description" }}
 
-                </div>
-
-                <div class="6u 12u$(mobile)">
-                    <img src="/img/about.png" alt="" class="image fit small-width center rounded-corners"/>
-                    <!--<img src="/img/ipad.jpg" alt="" class="image fit small-width center"/>-->
-                </div>
-
+        <div class="row">
+            <div class="6u 12u$(mobile)">
+                {{ range .Site.Params.portfolio1 }}
+                <article class="item bordered">
+                    <a href="{{ .url | absLangURL }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/>
+                        <header>
+                            <h3 class="bold">{{ .title }}</h3>
+                        </header>
+                    </a>
+                </article>
+                {{ end }}
             </div>
+
+
+            <div class="6u 12u$(mobile)">
+                {{ range .Site.Params.portfolio2 }}
+                <article class="item bordered">
+                    <a href="{{ .url | absLangURL }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}"/>
+                        <header>
+                            <h3 class="bold">{{ .title }}</h3>
+                        </header>
+                    </a>
+                </article>
+                {{ end }}
+            </div>
+
+            <!--
+            <div class="4u 12u$(mobile)">
+              {{ range .Site.Params.portfolio3 }}
+              <article class="item">
+                <a href="{{ .url | absLangURL }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
+                <header>
+                  <h3>{{ .title }}</h3>
+                </header>
+              </article>
+              {{ end }}
+            </div>
+            -->
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact -->
-    <section id="contact" class="four">
-        <div class="container">
+<!-- About Me -->
+<section id="about" class="three">
+    <div class="container">
 
-            <header>
-                <h2>{{ i18n "contact" }}</h2>
-            </header>
+        <header>
+            <h2>{{ i18n "about" }}</h2>
+        </header>
 
-            <p>{{ i18n "contact-explanation" }}</p>
+        <div class="row">
+            <div class="6u 12u$(mobile) smaller-type">
+                <p>{{ i18n "about-description-1" }}</p>
+                <p>{{ i18n "about-description-2" }}</p>
+                {{ i18n "about-description-3" }}
+            </div>
 
-            <form method="post" name="contact" action="thank-you" netlify>
-                <div class="row">
-                    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="{{ i18n "name" }}"/></div>
-                    <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email"/></div>
-                    <div class="12u$">
-                        <textarea name="message" placeholder="{{ i18n "message" }}"></textarea>
-                    </div>
-                    <div class="12u$">
-                        <input type="submit" value="{{ i18n "send-message" }}"/>
-                    </div>
+            <div class="6u 12u$(mobile)">
+                <img src="/img/about.png" alt="" class="image fit small-width center rounded-corners"/>
+                <!--<img src="/img/ipad.jpg" alt="" class="image fit small-width center"/>-->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="four">
+    <div class="container">
+
+        <header>
+            <h2>{{ i18n "contact" }}</h2>
+        </header>
+
+        <p class="smaller-type limited-width">{{ i18n "contact-explanation" }}</p><br>
+
+        <p><a href="mailto:{{ .Site.Params.email }}">1. {{ i18n "contact-send-email" }}</a></p>
+
+        <hr>
+        <p>2. {{ i18n "contact-send-message-form" }}</p>
+
+
+        <form method="post" name="contact" action="thank-you" netlify>
+            <div class="row">
+                <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="{{ i18n "name" }}"/></div>
+                <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email"/></div>
+                <div class="12u$">
+                    <textarea name="message" placeholder="{{ i18n "message" }}"></textarea>
                 </div>
-            </form>
-        </div>
-    </section>
+                <div class="12u$">
+                    <input type="submit" value="{{ i18n "send-message" }}"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
 
-</div>
-
-<!-- Footer -->
-<div id="footer">
-
-    <!-- Copyright -->
-    <ul class="copyright">
-        <li>&copy; {{ .Site.Params.copyright }}</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        <li><a href="https://gohugo.io/">Hugo</a></li>
-    </ul>
-
-</div>
-
-<!-- Scripts -->
-<script src="/js/jquery.min.js"></script>
-<script src="/js/jquery.scrolly.min.js"></script>
-<script src="/js/jquery.scrollzer.min.js"></script>
-<script src="/js/skel.min.js"></script>
-<script src="/js/util.js"></script>
-<!--[if lte IE 8]>
-<script src="/js/ie/respond.min.js"></script><![endif]-->
-<script src="/js/main.js"></script>
-
-</body>
-</html>
+{{ partial "footer" . }}

@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+/* TODO: add-again */
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");*/
 
 /*
 	Prologue by HTML5 UP
@@ -1643,7 +1644,7 @@
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #d6c700;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
