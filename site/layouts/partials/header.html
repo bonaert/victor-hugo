@@ -6,72 +6,90 @@
 -->
 <html>
 <head>
-  <title>{{ .Title }}</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico'/>
-  <!--[if lte IE 8]>
-  <script src="/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="src/css/mainLocal.css"/>
+    <title>{{ .Title }}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico'/>
+    <!--[if lte IE 8]>
+    <script src="/js/ie/html5shiv.js"></script><![endif]-->
 
 
-  <link rel="stylesheet" href="/css/main.css"/>
-  <link rel="stylesheet" href="/css/mainLocal.css"/>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="/css/mainLocal.css"/>
 
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/css/ie8.css"/><![endif]-->
-  <!--[if lte IE 9]>
-  <link rel="stylesheet" href="/css/ie9.css"/><![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="/css/ie8.css"/><![endif]-->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="/css/ie9.css"/><![endif]-->
 </head>
 <body>
 
 <!-- Header -->
 <div id="header">
 
-  <div class="top">
+    <div class="top">
 
-    <!-- Logo -->
-    <div id="logo">
-      <span class="image avatar48"><img class="" src="/img/favicon.svg" alt=""/></span>
-      <h1 id="title">{{ .Site.Params.name }}</h1>
-      <h6>{{ i18n "short-description" }}</h6>
+        <!-- Logo -->
+        <div id="logo">
+            <span class="image avatar48"><img class="" src="/img/favicon.svg" alt=""/></span>
+            <h1 id="title">{{ .Site.Params.name }}</h1>
+            <h6>{{ i18n "short-description" }}</h6>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <!--
+
+                Prologue's nav expects links in one of two formats:
+
+                1. Hash link (scrolls to a different section within the page)
+
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+                2. Standard link (sends the user to another page/site)
+
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+            -->
+            {{ if .IsHome }}
+            {{ partial "linksIndex" }}
+            {{ else }}
+            {{ partial "linksOther" }}
+            {{ end }}
+        </nav>
+
     </div>
 
-    <!-- Nav -->
-    <nav id="nav">
-      <!--
+    <div class="bottom">
 
-          Prologue's nav expects links in one of two formats:
-
-          1. Hash link (scrolls to a different section within the page)
-
-             <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-          2. Standard link (sends the user to another page/site)
-
-             <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-      -->
-            {{ if .IsHome }}
-                {{ partial "linksIndex" }}
-            {{ else }}
-                {{ partial "linksOther" }}
+        <!-- Social Icons -->
+        <ul class="icons">
+            {{ range .Site.Params.social }}
+            <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
             {{ end }}
-    </nav>
+        </ul>
 
-  </div>
-
-  <div class="bottom">
-
-    <!-- Social Icons -->
-    <ul class="icons">
-      {{ range .Site.Params.social }}
-      <li><a href="{{ .link }}" class="icon fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
-      {{ end }}
-    </ul>
-
-  </div>
+    </div>
 
 </div>
 
 <!-- Main -->
 <div id="main">
+
+    <div style="position:absolute; right: 20px; top: 10px;">
+
+        {{ if .IsHome }}
+            {{ if eq .Lang "en" }}
+            <a href="/fr/" class="white-link">Français</a>
+            {{ else }}
+            <a href="/" class="white-link">English</a>
+            {{ end }}
+        {{ else }}
+            {{ if .IsTranslated }}
+                {{ range .Translations }}
+                <a href="{{ .Permalink }}">{{ .Language }}</a>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>

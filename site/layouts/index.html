@@ -3,15 +3,6 @@
 <!-- Intro -->
 <section id="top" class="one dark cover">
     <div class="container">
-        <div style="position:absolute; right: 20px; top: 10px;">
-            {{ if eq .Lang "en" }}
-            <a href="/fr/">Français</a>
-            {{ else }}
-            <a href="/">English</a>
-            {{ end }}
-
-        </div>
-
         <header>
             <h2 class="alt"><strong>Grégory Bonaert</strong></h2>
             <p>{{ i18n "header-description" }}</p>
@@ -46,7 +37,8 @@
                     <li>{{ i18n "help-you-add-feature"}}</li>
                 </ul>
 
-                <p>{{ i18n "help-you-intro" }} <a href="#contact" class="scrolly">{{ i18n "help-you-get-in-touch" }}</a></p>
+                <p>{{ i18n "help-you-intro" }} <a href="#contact" class="scrolly">{{ i18n "help-you-get-in-touch" }}</a>
+                </p>
             </div>
         </header>
 
@@ -98,6 +90,12 @@
             </div>
             -->
         </div>
+
+        <br>
+        <hr>
+        <p class="limited-width portfolio-description">
+            {{ i18n "portfolio-see-github-on" }} <a href="{{ .Site.Params.github }}">Github</a>
+        </p> 
     </div>
 </section>
 

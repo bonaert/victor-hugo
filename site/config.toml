@@ -8,6 +8,7 @@ theme = "prologue-theme"
   name = "Gregory Bonaert"
   copyright = "Gregory Bonaert"
   email = "gregory@bonaert.eu"
+  github = "https://github.com/harokb"
 
 
 [[params.social]]
