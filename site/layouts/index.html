@@ -33,11 +33,11 @@
                     <li>{{ i18n "help-you-help-with-wordpress"}}</li>
                     <li>{{ i18n "help-you-code-for-you"}}</li>
                     <li>{{ i18n "help-you-integrate-with-api"}}</li>
-                    <li>{{ i18n "help-you-frontend-backed-dev"}}</li>
+                    <!--<li>{{ i18n "help-you-frontend-backed-dev"}}</li>-->
                     <li>{{ i18n "help-you-add-feature"}}</li>
                 </ul>
 
-                <p>{{ i18n "help-you-intro" }} <a href="#contact" class="scrolly">{{ i18n "help-you-get-in-touch" }}</a>
+                <p class="bold">{{ i18n "help-you-intro" }}: <a href="#contact" class="small button scrolly" style="font-weight: normal">{{ i18n "help-you-get-in-touch" }}</a>
                 </p>
             </div>
         </header>
@@ -133,7 +133,7 @@
 
         <p class="smaller-type limited-width">{{ i18n "contact-explanation" }}</p><br>
 
-        <p><a href="mailto:{{ .Site.Params.email }}">1. {{ i18n "contact-send-email" }}</a></p>
+        <p><a href="mailto:{{ .Site.Params.email }}">1. {{ i18n "contact-send-email" }}: {{ .Site.Params.email }}</a></p>
 
         <hr>
         <p>2. {{ i18n "contact-send-message-form" }}</p>

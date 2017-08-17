@@ -124,3 +124,18 @@ a.white-underline:hover::after {
 }
 
 
+a.button.small {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.inline {
+    display: inline;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.font-medium {
+    font-size: 1.2em;
+}

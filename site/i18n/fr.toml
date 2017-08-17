@@ -14,7 +14,7 @@ other = "À propos"
 other = "Contact"
 
 [header-description]
-other = "Dévéloppeur. Prêt à vous aider pour tous vos projets."
+other = "Dévéloppeur. Créateur de sites. Que puis-je faire pour vous?"
 
 [see-projects]
 other = "Voir projets"
@@ -32,10 +32,10 @@ other = "Que puis-je faire pour vous?"
 other = "Vous aider"
 
 [help-you-explanation]
-other = "Est-ce que vous voulez: "
+other = "Souhaitez-vous: "
 
 [help-you-create-a-website]
-other = "Créer un site web pour votre business ou pour vous"
+other = "Créer un site web pour promouvoir votre business ou pour vous"
 
 [help-you-create-an-app]
 other = "Créer une application"
@@ -56,10 +56,10 @@ other = "Engager un développeur front-end ou back-end"
 other = "Ajouter une fonctionalité à votre projet existant"
 
 [help-you-intro]
-other = "Je peux travailler pour vous."
+other = "Alors, je peux accomplir vos buts"
 
 [help-you-get-in-touch]
-other = "Envoyez votre message!"
+other = "Prendre contact"
 
 # Portfolio
 
@@ -78,7 +78,6 @@ other = "Pour les codeurs, voici le lien vers mes autres projets sur "
 [about-description-1]
 other = "Je suis Grégory Bonaert, un étudiant en sciences informatiques à l'Université Libre de Bruxelles, en Belgique."
 
-# TODO: check principalment in dictionary
 [about-description-2]
 other = "Je suis un freelancer principalment dans le développement Web (front-end et back-end), mais je peux vous aider pour tout type de développement."
 

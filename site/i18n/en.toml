@@ -14,13 +14,13 @@ other = "About me"
 other = "Contact"
 
 [header-description]
-other = "Software Developer. Ready to help you in all your projects."
+other = "Software Developer. Web enthusiast. What can I do for you?"
 
 [see-projects]
-other = "See projects"
+other = "See past projects"
 
 [contact-me]
-other = "Contact me"
+other = "Contact me for your project"
 
 # Help
 
@@ -34,7 +34,7 @@ other = "What can I do for you?"
 other = "Do you want to do any of the following:"
 
 [help-you-create-a-website]
-other = "Create a website for your business or for yourself"
+other = "Create a website to promote your business or for yourself"
 
 [help-you-create-an-app]
 other = "Create an app"
@@ -55,7 +55,7 @@ other = "Hire a front-end or back-end software developer"
 other = "Add a feature to your current project"
 
 [help-you-intro]
-other = "Then I can work for you to accomplish that."
+other = "I can work for you to accomplish that"
 
 [help-you-get-in-touch]
 other = "Let's get in touch!"
@@ -94,7 +94,7 @@ other = "Send me an email"
 other = "Send a message through the form"
 
 [contact-explanation]
-other = "If you want to chat about a project, have a question or want to know my rates, feel free to contact me."
+other = "If you want to chat about a project, have a question or want a price estimate, feel free to contact me now."
 
 [name]
 other = "Name"
