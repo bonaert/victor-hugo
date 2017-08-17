@@ -53,9 +53,9 @@
 
             -->
             {{ if .IsHome }}
-            {{ partial "linksIndex" }}
+            {{ partial "linksIndex" . }}
             {{ else }}
-            {{ partial "linksOther" }}
+            {{ partial "linksOther" . }}
             {{ end }}
         </nav>
 
@@ -88,7 +88,7 @@
         {{ else }}
             {{ if .IsTranslated }}
                 {{ range .Translations }}
-                <a href="{{ .Permalink }}">{{ .Language }}</a>
+                <a href="{{ .Permalink }}">{{ .Lang }}</a>
                 {{ end }}
             {{ end }}
         {{ end }}
