@@ -33,7 +33,12 @@
         <!-- Logo -->
         <div id="logo">
             <span class="image avatar48"><img class="" src="/img/favicon.svg" alt=""/></span>
-            <h1 id="title">{{ .Site.Params.name }}</h1>
+	    
+	    {{ if .IsHome }}
+	    <a href="#top" class="scrolly"><h1 id="title">{{ .Site.Params.name }}</h1></a>
+	    {{ else }}
+	    <a href="{{ "/" | relLangURL }}"><h1 id="title">{{ .Site.Params.name }}</h1></a>
+	    {{ end }}
             <h6>{{ i18n "short-description" }}</h6>
         </div>
 
