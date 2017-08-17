@@ -139,3 +139,19 @@ strong {
 .font-medium {
     font-size: 1.2em;
 }
+
+@media (max-width: 736px) {
+    .text-center-mobile {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+}
+
+a.smaller-sides.button {
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+}
