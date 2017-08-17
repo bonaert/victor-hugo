@@ -1,6 +1,6 @@
 #languageCode = "en-us"
 DefaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+#defaultContentLanguageInSubdir = true
 title = "Gregory Bonaert"
 baseurl = "/"
 theme = "prologue-theme"
