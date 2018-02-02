@@ -8,20 +8,20 @@ theme = "prologue-theme"
 [params]
   name = "Gregory Bonaert"
   copyright = "Gregory Bonaert"
-  email = "gregory@bonaert.eu"
-  github = "https://github.com/harokb"
+  email = "contact-me@bonaert.eu"
+  github = "https://github.com/bonaert"
 
 
 [[params.social]]
   medium = "github"
   icon = "github"
-  link = "https://github.com/harokb"
+  link = "https://github.com/bonaert"
 
 
 [[params.social]]
   medium = "email"
   icon = "envelope"
-  link = "mailto:gregory@bonaert.eu"
+  link = "mailto:contact-me@bonaert.eu"
 
 # Portfolio column one
 
