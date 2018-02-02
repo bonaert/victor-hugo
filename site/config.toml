@@ -2,7 +2,7 @@
 DefaultContentLanguage = "en"
 #defaultContentLanguageInSubdir = true
 title = "Gregory Bonaert"
-baseurl = "/"
+baseurl = "gregbonaert.com/"
 theme = "prologue-theme"
 
 [params]
