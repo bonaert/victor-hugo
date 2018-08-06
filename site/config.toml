@@ -43,11 +43,11 @@ theme = "prologue-theme"
 
 # Portfolio column 3
 
-#[[params.portfolio3]]
-#  title = "Magna Nullam"
-#  alt = ""
-#  source = "/img/pic04.jpg"
-#  url = "#"
+[[params.portfolio3]]
+  title = "Olympe Sport Translation - Translation
+  alt = "Translation Website"
+  source = "/img/olympe"
+  url = "portfolio/olympe"
 
 [Languages]
 [Languages.en]
