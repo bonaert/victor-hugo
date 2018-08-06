@@ -44,9 +44,9 @@ theme = "prologue-theme"
 # Portfolio column 3
 
 [[params.portfolio3]]
-  title = "Olympe Sport Translation - Translation
+  title = "Olympe Sports Translation - Translation"
   alt = "Translation Website"
-  source = "/img/olympe"
+  source = "/img/olympe.png"
   url = "portfolio/olympe"
 
 [Languages]
