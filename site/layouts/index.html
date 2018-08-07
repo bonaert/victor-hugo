@@ -79,10 +79,11 @@
             <div class="12u 12u$(mobile)">
               {{ range .Site.Params.portfolio3 }}
               <article class="item bordered">
-                <a href="{{ .url | absLangURL }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" /></a>
-                <header>
-                  <h3 class="bold">{{ .title }}</h3>
-                </header>
+                <a href="{{ .url | absLangURL }}" class="image fit"><img src="{{ .source }}" alt="{{ .alt }}" />
+                    <header>
+                      <h3 class="bold">{{ .title }}</h3>
+                    </header>
+                </a>
               </article>
               {{ end }}
             </div>
